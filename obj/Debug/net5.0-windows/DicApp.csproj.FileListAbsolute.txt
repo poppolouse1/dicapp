@@ -34,3 +34,10 @@ C:\Users\Özgü Arda Türkmen\Desktop\dicapp\net5.0-windows\net5.0-windows\DicAp
 C:\Users\Özgü Arda Türkmen\Desktop\dicapp\net5.0-windows\net5.0-windows\DicApp.dll
 C:\Users\Özgü Arda Türkmen\Desktop\dicapp\net5.0-windows\net5.0-windows\ref\DicApp.dll
 C:\Users\Özgü Arda Türkmen\Desktop\dicapp\net5.0-windows\net5.0-windows\DicApp.pdb
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\DicApp.exe
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\DicApp.deps.json
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\DicApp.runtimeconfig.json
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\DicApp.runtimeconfig.dev.json
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\DicApp.dll
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\ref\DicApp.dll
+C:\Users\Özgü Arda Türkmen\Desktop\German Decks\net5.0-windows\DicApp.pdb
