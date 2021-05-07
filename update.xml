@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<myCoolApp>
+<GermanDecks>
     <currentVersion>
         <major>1</major>
         <minor>0</minor>
         <build>0</build>
     </currentVersion>
-    <path>http://TestApp.exe</path>
-</myCoolApp>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/ref/DicApp.dll</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.deps.json</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.dll</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.exe</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.pdb</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.runtimeconfig.dev.json</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.runtimeconfig.json</path>
+</GermanDecks>
