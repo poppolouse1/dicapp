@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Özgü Arda Türkmen\Desktop\Programs\dicapp\DicApp\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Forms\gameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\gWordSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Wordenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

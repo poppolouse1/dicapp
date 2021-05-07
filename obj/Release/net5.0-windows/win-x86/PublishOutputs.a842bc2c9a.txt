@@ -1,0 +1,5 @@
+C:\dicapp\DicApp.exe
+C:\dicapp\DicApp.dll
+C:\dicapp\DicApp.deps.json
+C:\dicapp\DicApp.runtimeconfig.json
+C:\dicapp\DicApp.pdb

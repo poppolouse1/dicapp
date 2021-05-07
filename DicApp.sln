@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DicApp", "DicApp.csproj", "{654AA35A-AEDE-431C-A69F-1374AC2E51B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Debug|Default.Build.0 = Debug|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Release|Default.ActiveCfg = Release|Any CPU
+		{654AA35A-AEDE-431C-A69F-1374AC2E51B8}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D99BD10-336E-4DA3-9DD2-D3757B3B75AD}
+	EndGlobalSection
+EndGlobal
