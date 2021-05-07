@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\Özgü Arda Türkmen\Desktop\dicapp\net5.0-windows\</OutputPath>
+    <OutputPath>C:\Users\Özgü Arda Türkmen\Desktop\German Decks\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
