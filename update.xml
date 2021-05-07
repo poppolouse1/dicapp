@@ -2,7 +2,7 @@
 <GermanDecks>
     <currentVersion>
         <major>1</major>
-        <minor>0</minor>
+        <minor>1</minor>
         <build>0</build>
     </currentVersion>
     <path1>https://raw.githubusercontent.com/poppolouse1/dicapp/release/ref/DicApp.dll</path1>
