@@ -5,12 +5,16 @@
         <minor>0</minor>
         <build>7</build>
     </currentVersion>
-    <path1>https://raw.githubusercontent.com/poppolouse1/dicapp/release/ref/DicApp.dll</path1>
-    <path2>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.deps.json</path2>
-    <path3>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.dll</path3>
-    <path4>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.exe</path4>
-    <path5>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.pdb</path5>
-    <path6>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.runtimeconfig.dev.json</path6>
-    <path7>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.runtimeconfig.json</path7>
-    <path8>https://raw.githubusercontent.com/poppolouse1/dicapp/release/icon.ico</path8>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/ref/DicApp.dll</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.deps.json</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.dll</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.exe</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.pdb</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.runtimeconfig.dev.json</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.runtimeconfig.json</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/icon.ico</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/tr.png</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/eng.png</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/Language/EN</path>
+    <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/Language/TR</path>
 </GermanDecks>
