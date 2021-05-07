@@ -24,16 +24,20 @@ namespace DicApp.Forms
 
         private string[] currentLine;
         private int currentCount;
+        private string currentLanguage;
+
+        private functions functions;
 
         private Button finishB;
         private RichTextBox textBoxNew;
 
-        public gameScreen(int amountOfWords, string deck, gWordSelection preWin)
+        public gameScreen(int amountOfWords, string deck, gWordSelection preWin, string currentLanguage)
         {
             InitializeComponent();
             this.amountOfWords = amountOfWords;
             this.deck = deck;
             this.preWin = preWin;
+            this.currentLanguage = currentLanguage;
         }
 
         private void gameScreen_Load(object sender, EventArgs e)
@@ -43,6 +47,22 @@ namespace DicApp.Forms
             setNewWord();
             this.currentCount = 0;
             this.textBoxNew = new RichTextBox();
+            this.functions = new functions();
+
+            this.label1.Text = functions.loadLanguageText(currentLanguage, 13);
+            this.label3.Text = functions.loadLanguageText(currentLanguage, 14);
+            this.label13.Text = functions.loadLanguageText(currentLanguage, 15);
+            this.label5.Text = functions.loadLanguageText(currentLanguage, 21);
+            this.label6.Text = functions.loadLanguageText(currentLanguage, 22);
+            this.label7.Text = functions.loadLanguageText(currentLanguage, 23);
+            this.label8.Text = functions.loadLanguageText(currentLanguage, 24);
+
+            this.button5.Text = functions.loadLanguageText(currentLanguage, 16);
+            this.button3.Text = functions.loadLanguageText(currentLanguage, 17);
+            this.button2.Text = functions.loadLanguageText(currentLanguage, 18);
+            this.button4.Text = functions.loadLanguageText(currentLanguage, 19);
+            this.button1.Text = functions.loadLanguageText(currentLanguage, 20);
+
             textBoxNew.Hide();
         }
 
@@ -61,7 +81,7 @@ namespace DicApp.Forms
         {
             string[] lines = System.IO.File.ReadAllLines(@"Dictionary/Deutsch/" + this.deck);
             var r = new Random();
-            var randomLineNumber = r.Next(0, lines.Length - 1);
+            var randomLineNumber = r.Next(1, lines.Length);
             string line = lines[randomLineNumber];
             
 
@@ -232,7 +252,7 @@ namespace DicApp.Forms
             else
             {
                 this.Width = 796;
-                textBoxNew.Text = "How to play:\n\nWhen a word comes up, try to guess it. After that, click the \"Reveal Meaning\" button and see whether you've gotten it right or not. If you have, then click the \"Right\" button. If you were wrong, click \"Wrong\". If you didn't have had any guess, then click \"Passed\".\n\nIf you were not able to guess the \'main meaning\' but one of the other meanings of the word, then you should click \"Half Point\".\n\nYour grade is calculated in accordance with the following:\nRight-> + 1P\nWrong-> - 1P\nHalf Point-> 0,5P\nPassed-> 0P";
+                textBoxNew.Text = functions.loadLanguageText(currentLanguage, 25);
                 textBoxNew.Location = new Point(337, 6);
                 textBoxNew.Width = 431;
                 textBoxNew.Height = 228;

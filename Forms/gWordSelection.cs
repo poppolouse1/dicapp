@@ -13,15 +13,20 @@ namespace DicApp.Forms
     public partial class gWordSelection : Form
     {
         private mainMenu previousScreen;
+        private functions functions;
         public gWordSelection(mainMenu preWin)
         {
             InitializeComponent();
             this.previousScreen = preWin;
+            this.functions = new functions();
         }
 
         private void gWordSelection_Load(object sender, EventArgs e)
         {
             this.Icon = new Icon("icon.ico");
+            this.label1.Text = functions.loadLanguageText(previousScreen.currentLanguage, 11);
+            this.label2.Text = functions.loadLanguageText(previousScreen.currentLanguage, 6);
+            this.button1.Text = functions.loadLanguageText(previousScreen.currentLanguage, 12);
 
             string[] allFiles = System.IO.Directory.GetFiles(@"Dictionary/Deutsch");
 
@@ -50,7 +55,7 @@ namespace DicApp.Forms
             if (desteComboBox2.GetItemText(desteComboBox2.SelectedItem) != "")
             {
                 int wordcount = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
-                gameScreen game = new gameScreen(wordcount, desteComboBox2.GetItemText(desteComboBox2.SelectedItem), this);
+                gameScreen game = new gameScreen(wordcount, desteComboBox2.GetItemText(desteComboBox2.SelectedItem), this, previousScreen.currentLanguage);
                 game.Location = this.Location;
                 game.Show();
                 this.Hide();
