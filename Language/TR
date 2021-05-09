@@ -7,7 +7,7 @@
 7#(Kelime Tipi, X, X, X, X, X,...)
 8#Kelime Tipleri: N, A, V
 9#TAMAM
-10#Bir desteye bir kelime nasıl girilir:\n\nVeritabanında her bir satır bir kelime için ayrılır. Her ""Tamam"" tuşuna bastığınızda program 1 satır kullanır. Kelimeleri nasıl girebiliceğinize dair aşağıda birkaç örnek var;\n\nKısaca:\n--İsim--\nN, Artikel, İsmin Tekili, İsmin Çoğulu, Temel Anlam, Yan Anlam1, Yan Anlam2,...\n\nÖr.: der, Boden, Böden, yer, zemin, dip, temel, toprak, zemin kat\n\n--Fiil--\nNormal Fiil: V, Fiil, NV, Temel Anlam, Yan Anlam1, Yan Anlam2,...\nAyrılabilen Fiil: V, Fiil, TV, Temel Anlam, Yan Anlam1, Yan Anlam2,...\n\nÖr.;\nNormal Fiil:\nV, blicken, NV, göz atmak, bakmak, göz ucuyla bakmak\nV, an etw.(Dat.) kleben, NV, bir şeye yapışık olmak, bir şeye sıkıca yapışık olmak, bir şeye bağlı olmak\n\nAyrılabilen Fiil:\nV, umkreisen, TV, yörüngede dönmek, dönmek, etrafında dönmek\n\n--Sıfat--\nA, Sıfat, Temel Anlam, Yan Anlam1, Yan Anlam2,...\n\nBazı ince detaylar için açıklama:\nHer satırın 'V' veya 'N' veya 'A' ile başladığını fark etmiş olabilirsiniz. Bu durum, programın hangi kelime türü ile uğraştığını anlaması için var.\n\nAyrıca, fiil türlerinde 2 çeşit fiil var. 'NV' ve 'TV'. Bunlar da programın kullanması için. 'NV' ""Normal Fiil""in kısaltması olarak ve 'TV' ""Trennbare Verb""in kısaltması olarak kullanılıyor. Şu anda bu şekilde yapılan ayrımın bir amacı yok ancak ileride olacak.
+10#Bir desteye bir kelime nasıl girilir:\n\nVeritabanında her bir satır bir kelime için ayrılır. Her ""Tamam"" tuşuna bastığınızda program 1 satır kullanır. Kelimeleri nasıl girebiliceğinize dair aşağıda birkaç örnek var;\n\nKısaca:\n--İsim--\nN, Artikel, İsmin Tekili, İsmin Çoğulu, Temel Anlam, Yan Anlam1, Yan Anlam2,...\n\nÖr.: der, Boden, Böden, yer, zemin, dip, temel, toprak, zemin kat\n\n--Fiil--\nNormal Fiil: V, Fiil, NV, Temel Anlam, Yan Anlam1, Yan Anlam2,...\nAyrılabilen Fiil: V, Fiil, TV, Temel Anlam, Yan Anlam1, Yan Anlam2,...\n\nÖr.;\nNormal Fiil:\nV, blicken, NV, göz atmak, bakmak, göz ucuyla bakmak\nV, an etw.(Dat.) kleben, NV, bir şeye yapışık olmak, bir şeye sıkıca yapışık olmak, bir şeye bağlı olmak\n\nAyrılabilen Fiil:\nV, umkreisen, TV, yörüngede dönmek, dönmek, etrafında dönmek\n\n--Sıfat--\nA, Sıfat, Temel Anlam, Yan Anlam1, Yan Anlam2,...\n\nBazı ince detaylar için açıklama:\nHer satırın 'V' veya 'N' veya 'A' ile başladığını fark etmiş olabilirsiniz. Bu durum, programın hangi kelime türü ile uğraştığını anlaması için var.\n\nAyrıca, fiil türlerinde 2 çeşit fiil var. 'NV' ve 'TV'. Bunlar da programın kullanması için. 'NV' ""Normal Fiil""in kısaltması olarak ve 'TV' ""Trennbare Verb""in kısaltması olarak kullanılıyor. Şu anda bu şekilde yapılan ayrımın bir amacı yok ancak ileride olacak.\n\nKısayollar:\n*'Enter' tuşuna bastığınız zaman program girmiş olduğunuz satırın sonuna bir virgül ve bir boşluk ekler.
 11#Kelime Sayısı
 12#Başla
 13#Kelime:
@@ -27,5 +27,9 @@
 27#Yeni bir güncelleme bulundu. Kısa süre içerisinde indirilecek.
 28#Güncelleme bulundu!
 29#Güncellemeler yükleniyor...
-30#Yeni eklenenler:\n*Türkçe Dil Desteği Eklendi
+30#Yeni eklenenler:\n*'Kelime Tahmini!' oyununda isimler çıkarken artık artikelleri de ekranda gözüküyor.\n*'Enter' tuşuna basınca virgül ve boşluk ekleyen bir kısayol kelime girme ekranına eklendi. Yardım kısmında kullanımı yazıyor.\n*Özel isimler kullanarak yeni deste oluşturabilme özelliği eklendi.
 31#Yeni Sürüm Yüklendi!
+32#Yeni Deste:
+33#Kelimelerin yüklenebileceği bir deste seçmeniz veya yaratmanız gerekiyor!
+34#Hem bir deste seçip hem de yeni bir deste oluşturamazsınız!
+35#Bu isimde olan bir deste zaten var!

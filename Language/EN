@@ -7,7 +7,7 @@
 7#(Word type, X, X, X, X, X,...)
 8#Word types: N, A, V
 9#OK
-10#How to enter a word into a deck:\n\nIn the database, each line is reserved for one word. Everytime you use the ""OK"" button, the program uses 1 line.Here's how you should enter words with some examples;\n\nIn short:\n--Noun--\nN, Article, Singular Word, Plural Word, Main Meaning, Other Meaning1, Other Meaning2, ...\n\nE.x.: N, der, Boden, Böden, ground, floor, bottom, base, land, soild, ground floor,\n\n--Verb--\nNormal Verb: V, Verb, NV, Main Meaning, Other Meaning1, Other Meaning2, ...\nSeperable Verb: V, Verb, TV, Main Meaning, Other Meaning1, Other Meaning2, ...\n\nE.x.;\nNormal Verb: \nV, blicken, NV, to glance, to look, to gaze\nV, an etw.(Dat.) kleben, NV, to be glued to sth., to cleave to sth., to adhere to sth.\n\nSeperable Verb: \nV, umkreisen, TV, to orbit, to revolve, to circuit\n\n--Adjective--\nA, Adjective, Main Meaning, Other Meaning1, Other Meaning2,... \n\nExplanation for some nitpicks:\nYou might recognize that every line starts with either 'V' or 'N' or 'A'.This is for the program to understand what kind of word it is.\n\nAlso, in verb types there are two types of verbs. 'NV' and 'TV'.These are also for the program to use. 'NV' stands for "Normal Verb" and 'TV' stands for "Trennbare Verb".This feature doesn't have any use right now, but it will be in the future.
+10#How to enter a word into a deck:\n\nIn the database, each line is reserved for one word. Everytime you use the ""OK"" button, the program uses 1 line.Here's how you should enter words with some examples;\n\nIn short:\n--Noun--\nN, Article, Singular Word, Plural Word, Main Meaning, Other Meaning1, Other Meaning2, ...\n\nE.x.: N, der, Boden, Böden, ground, floor, bottom, base, land, soild, ground floor,\n\n--Verb--\nNormal Verb: V, Verb, NV, Main Meaning, Other Meaning1, Other Meaning2, ...\nSeperable Verb: V, Verb, TV, Main Meaning, Other Meaning1, Other Meaning2, ...\n\nE.x.;\nNormal Verb: \nV, blicken, NV, to glance, to look, to gaze\nV, an etw.(Dat.) kleben, NV, to be glued to sth., to cleave to sth., to adhere to sth.\n\nSeperable Verb: \nV, umkreisen, TV, to orbit, to revolve, to circuit\n\n--Adjective--\nA, Adjective, Main Meaning, Other Meaning1, Other Meaning2,... \n\nExplanation for some nitpicks:\nYou might recognize that every line starts with either 'V' or 'N' or 'A'.This is for the program to understand what kind of word it is.\n\nAlso, in verb types there are two types of verbs. 'NV' and 'TV'.These are also for the program to use. 'NV' stands for "Normal Verb" and 'TV' stands for "Trennbare Verb".This feature doesn't have any use right now, but it will be in the future.\n\nShortcuts:\n*When you press 'Enter' the program automatically adds a comma and a space at the end of your text.
 11#The Amout of Words:
 12#Start
 13#Kelime:
@@ -27,5 +27,9 @@
 27#A new update is found. It will be downloading shortly.
 28#Update found!
 29#Updates are installing...
-30#New features added:\n*Turkish language support
+30#New features added:\n*When playing 'Guess the word!', it now shows the article associated with the word.\n*A shortcut for the word entering screen using key 'Enter' has been added. The usage of the said shortcut is written in the 'help' section.\n*The feature of adding new decks with custom names has been added.
 31#New Version Installed!
+32#New Deck:
+33#You must choose a deck, or create one, for the words to go in!
+34#You can not both create a deck and choose a deck!
+35#There is already a deck with that name!
