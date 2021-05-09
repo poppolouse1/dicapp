@@ -53,7 +53,7 @@ namespace DicApp.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (desteComboBox.GetItemText((desteComboBox.SelectedItem)) != "")
+            if (desteComboBox.GetItemText(desteComboBox.SelectedItem) != "")
             {
                 if (textBox1.Text != "")
                 {
@@ -61,12 +61,32 @@ namespace DicApp.Forms
                 }
                 else
                 {
-                    function.writeToFile(wordText.Text, desteComboBox.GetItemText(desteComboBox.SelectedItem));
-                    wordText.ResetText();
+                    if (wordText.Text.Split(", ")[0].ToLower() == "V".ToLower() || wordText.Text.Split(", ")[0].ToLower() == "A".ToLower())
+                    {
+                        if (function.wordExists(wordText.Text.Split(", ")[0].ToUpper(), wordText.Text.Split(", ")[1], desteComboBox.GetItemText(desteComboBox.SelectedItem)))
+                        {
+                            MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 36), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            function.writeToFile(wordText.Text, desteComboBox.GetItemText(desteComboBox.SelectedItem));
+                            wordText.ResetText();
+                        }
+                    }
+                    else
+                    {
+                        if (function.wordExists(wordText.Text.Split(", ")[0].ToUpper(), wordText.Text.Split(", ")[2], desteComboBox.GetItemText(desteComboBox.SelectedItem)))
+                        {
+                            MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 36), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            function.writeToFile(wordText.Text, desteComboBox.GetItemText(desteComboBox.SelectedItem));
+                            wordText.ResetText();
+                        }
+                    }
                 }
-                
-            }
-            else if (textBox1.Text != "")
+            } else if (textBox1.Text != "")
             {
                 if (File.Exists(@"Dictionary/Deutsch/" + textBox1.Text) == true)
                 {
@@ -74,8 +94,32 @@ namespace DicApp.Forms
                 }
                 else
                 {
-                    function.writeToFile(wordText.Text, textBox1.Text);
-                    wordText.ResetText();
+                    //Check for verb type here;
+                    if (wordText.Text.Split(", ")[0].ToLower() == "V".ToLower() || wordText.Text.Split(", ")[0].ToLower() == "A".ToLower())
+                    {
+                        if (function.wordExists(wordText.Text.Split(", ")[0], wordText.Text.Split(", ")[1], textBox1.Text))
+                        {
+                            MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 36), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            function.writeToFile(wordText.Text, textBox1.Text);
+                            wordText.ResetText();
+                        }
+                    }
+                    else
+                    {
+                        if (function.wordExists(wordText.Text.Split(", ")[0], wordText.Text.Split(", ")[2], textBox1.Text))
+                        {
+                            MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 36), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            function.writeToFile(wordText.Text, textBox1.Text);
+                            wordText.ResetText();
+                        }
+                    }
+                    
                 }
             }
             else
