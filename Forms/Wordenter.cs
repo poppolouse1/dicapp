@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,11 +29,12 @@ namespace DicApp.Forms
             string[] allFiles = System.IO.Directory.GetFiles(@"Dictionary/Deutsch");
             this.function = new functions();
 
-            this.label1.Text = function.loadLanguageText(previousWindow.currentLanguage, 5);
+            //REMOVED|| this.label1.Text = function.loadLanguageText(previousWindow.currentLanguage, 5);
             this.label4.Text = function.loadLanguageText(previousWindow.currentLanguage, 6);
             this.label2.Text = function.loadLanguageText(previousWindow.currentLanguage, 7);
             this.label3.Text = function.loadLanguageText(previousWindow.currentLanguage, 8);
             this.button1.Text = function.loadLanguageText(previousWindow.currentLanguage, 9);
+            this.label5.Text = function.loadLanguageText(previousWindow.currentLanguage, 32);
 
             if (allFiles.Length == 0)
             {
@@ -53,13 +55,32 @@ namespace DicApp.Forms
         {
             if (desteComboBox.GetItemText((desteComboBox.SelectedItem)) != "")
             {
-                functions functions = new functions();
-                functions.writeToFile(wordText.Text, desteComboBox.GetItemText(desteComboBox.SelectedItem));
-                wordText.ResetText();
+                if (textBox1.Text != "")
+                {
+                    MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 34), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    function.writeToFile(wordText.Text, desteComboBox.GetItemText(desteComboBox.SelectedItem));
+                    wordText.ResetText();
+                }
+                
+            }
+            else if (textBox1.Text != "")
+            {
+                if (File.Exists(@"Dictionary/Deutsch/" + textBox1.Text) == true)
+                {
+                    MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 35), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    function.writeToFile(wordText.Text, textBox1.Text);
+                    wordText.ResetText();
+                }
             }
             else
             {
-                MessageBox.Show("You must choose a deck for the words to go in!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(function.loadLanguageText(previousWindow.currentLanguage, 33), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -92,6 +113,15 @@ namespace DicApp.Forms
         {
             this.Hide();
             previousWindow.Show();
+        }
+
+        private void wordText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                wordText.Text = wordText.Text + ", ";
+                wordText.SelectionStart = wordText.Text.Length;
+            }
         }
     }
 }

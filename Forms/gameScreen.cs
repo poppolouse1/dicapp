@@ -94,7 +94,7 @@ namespace DicApp.Forms
                     label2.Text = lineParts[1];
                     break;
                 case "N":
-                    label2.Text = lineParts[2];
+                    label2.Text = lineParts[1] + " " + lineParts[2];
                     break;
                 case "A":
                     label2.Text = lineParts[1];
