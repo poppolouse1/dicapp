@@ -3,7 +3,7 @@
     <currentVersion>
         <major>1</major>
         <minor>0</minor>
-        <build>9</build>
+        <build>10</build>
     </currentVersion>
     <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/ref/DicApp.dll</path>
     <path>https://raw.githubusercontent.com/poppolouse1/dicapp/release/DicApp.deps.json</path>
