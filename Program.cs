@@ -17,9 +17,9 @@ namespace DicApp
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainMenu());
+           // Application.Run(new mainMenu());
 
- /*           if (args[0] == "-n")
+            if (args[0] == "-n")
             {
                 Application.Run(new mainMenu());
             }
@@ -27,7 +27,7 @@ namespace DicApp
             {
                 Application.Exit();
             }
-            */
+            
         }
     }
 }
