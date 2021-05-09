@@ -35,16 +35,47 @@ namespace DicApp
                     }
                 }
             }
-            /*
-            string[] languageLines = File.ReadAllLines("Language/" + language);
-
-            foreach (string line in languageLines)
-            {
-                
-            }
-            */
+            
             return "ERROR";
 
+        }
+
+        public bool wordExists(string wordType, string word, string deck)
+        {
+            using (StreamReader reader = new StreamReader("Dictionary/Deutsch/" + deck))
+            {
+                string line;
+
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] lineSep = line.Split(", ");
+                    switch (wordType)
+                    {
+                        case "V":
+                            if (lineSep[1].ToLower() == word.ToLower())
+                            {
+                                return true;
+                            }
+                            break;
+                        case "N":
+                            if (lineSep[2].ToLower() == word.ToLower())
+                            {
+                                return true;
+                            }
+                            break;
+                        case "A":
+                            if (lineSep[1].ToLower() == word.ToLower())
+                            {
+                                return true;
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                return false;
+            }
         }
     }
 }
