@@ -27,9 +27,12 @@
 27#Yeni bir güncelleme bulundu. Kısa süre içerisinde indirilecek.
 28#Güncelleme bulundu!
 29#Güncellemeler yükleniyor...
-30#Yeni eklenenler:\n*'Kelime Tahmini!' oyununda isimler çıkarken artık artikelleri de ekranda gözüküyor.\n*'Enter' tuşuna basınca virgül ve boşluk ekleyen bir kısayol kelime girme ekranına eklendi. Yardım kısmında kullanımı yazıyor.\n*Özel isimler kullanarak yeni deste oluşturabilme özelliği eklendi.
+30#Yeni eklenenler:\n\nGerman Decks v1.0.9:\n\nGeliştirmeler:\n*'Kelime Tahmini!' oyununda isimler çıkarken artık artikelleri de ekranda gözüküyor.\n*'Enter' tuşuna basınca virgül ve boşluk ekleyen bir kısayol kelime girme ekranına eklendi. Yardım kısmında kullanımı yazıyor.\n\nYeni Özellikler:\n*Özel isimler kullanarak yeni deste oluşturabilme özelliği eklendi.\n\nGerman Decks v1.0.10:\n\nGeliştirmeler:\n*Deste içerisinde hâlihazırda olan bir kelime girmeye çalışıldığında artık kullanıcıya bir uyarı veriliyor.\n\n*Hata çözümleri:\n*Başka bir dil seçiliyken mesaj kutularının hâlâ İngilizce belirme sorunu giderildi.
 31#Yeni Sürüm Yüklendi!
 32#Yeni Deste:
 33#Kelimelerin yüklenebileceği bir deste seçmeniz veya yaratmanız gerekiyor!
 34#Hem bir deste seçip hem de yeni bir deste oluşturamazsınız!
 35#Bu isimde olan bir deste zaten var!
+36#Bu kelime zaten deste içerisinde var!
+function.writeToFile(wordText.Text, desteComboBox.GetItemText(desteComboBox.SelectedItem));
+wordText.ResetText();

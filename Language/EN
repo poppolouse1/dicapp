@@ -27,9 +27,10 @@
 27#A new update is found. It will be downloading shortly.
 28#Update found!
 29#Updates are installing...
-30#New features added:\n*When playing 'Guess the word!', it now shows the article associated with the word.\n*A shortcut for the word entering screen using key 'Enter' has been added. The usage of the said shortcut is written in the 'help' section.\n*The feature of adding new decks with custom names has been added.
+30#New features added:\n\nGerman Decks v1.0.9:\n\nNew Features:\n*When playing 'Guess the word!', it now shows the article associated with the word.\n*A shortcut for the word entering screen using key 'Enter' has been added. The usage of the said shortcut is written in the 'help' section.\n\nImprovements:\n*The feature of adding new decks with custom names has been added.\n\nGerman Decks v1.0.10:\n\nImprovements:\n*When user enters a word which already in the chosen deck, the program warns the user and doesn't allow it.\n\nFixes:Fixed some message boxes always appearing in English even if some other language was selected.
 31#New Version Installed!
 32#New Deck:
 33#You must choose a deck, or create one, for the words to go in!
 34#You can not both create a deck and choose a deck!
 35#There is already a deck with that name!
+36#This word is already in the deck!
